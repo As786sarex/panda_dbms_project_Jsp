@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="panda:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/panda_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="panda/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="panda" />
+        </element>
+        <element id="library" level="application" name="mariadb-java-client-2.2.1" />
+      </element>
+    </root>
+  </artifact>
+</component>
