@@ -1,7 +1,7 @@
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.DriverManager" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %><%--
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %><%--
   Created by IntelliJ IDEA.
   User: asif
   Date: 25-03-2019
@@ -12,14 +12,21 @@
 <html>
 <head>
     <title>Book By Cs Greater Than 2</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
-<table border="3">
+
+
+<div >
+<table>
+    <tr><th id="title" colspan="3">Show All Book By CSE That Use More Than 2 Books</th></tr>
+
     <tr>
-        <td>COURSE NUMBER</td>
-        <td>BOOK ISBN</td>
-        <td>BOOK TITLE</td>
+        <th>COURSE NUMBER</th>
+        <th>BOOK ISBN</th>
+        <th>BOOK TITLE</th>
     </tr>
+    <tbody>
     <%
         try {
             Class.forName("org.mariadb.jdbc.Driver");
@@ -36,8 +43,9 @@
             while (rs.next()) {
 
     %>
+
     <tr>
-        <td><%=rs.getInt("course") %>
+        <td ><%=rs.getInt("course") %>
         </td>
 
         <td><%=rs.getInt("book_isbn") %>
@@ -50,7 +58,9 @@
 
         }
     %>
+    </tbody>
 </table>
+</div>
 <%
         rs.close();
         stmt.close();

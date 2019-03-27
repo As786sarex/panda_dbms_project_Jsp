@@ -12,16 +12,18 @@
 <html>
 <head>
     <title>Show All Enrolls</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
 <form method="post">
 
     <table border="2">
+        <tr><th id="title" colspan="4">Show All Enrolls</th></tr>
         <tr>
-            <td>REGISTRATION NUMBER</td>
-            <td>COURSE NUMBER</td>
-            <td>SEMESTER</td>
-            <td>MARKS</td>
+            <th>REGISTRATION NUMBER</th>
+            <th>COURSE NUMBER</th>
+            <th>SEMESTER</th>
+            <th>MARKS</th>
         </tr>
         <%
             try {

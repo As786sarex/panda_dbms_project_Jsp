@@ -13,6 +13,7 @@
 <head>
     <title>Show All Course</title>
 </head>
+<link rel="stylesheet" href="table_style.css">
 
 <body>
 
@@ -20,10 +21,11 @@
 <form method="post">
 
     <table border="3">
+        <tr><th id="title" colspan="3">Show All Course</th></tr>
         <tr>
-            <td>COURSE NUMBER</td>
-            <td>COURSE NAME</td>
-            <td>DEPARTMENT</td>
+            <th>COURSE NUMBER</th>
+            <th>COURSE NAME</th>
+            <th>DEPARTMENT</th>
         </tr>
         <%
             try {

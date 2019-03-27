@@ -15,6 +15,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Insert title here</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
 
@@ -22,11 +23,12 @@
 <form method="post">
 
     <table border="3">
+        <tr><th id="title" colspan="4">Show All Students</th></tr>
         <tr>
-            <td>REGNO</td>
-            <td>NAME</td>
-            <td>MAJOR</td>
-            <td>DOB</td>
+            <th>REGNO</th>
+            <th>NAME</th>
+            <th>MAJOR</th>
+            <th>DOB</th>
         </tr>
         <%
             try {

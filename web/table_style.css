@@ -1,0 +1,42 @@
+body {
+    background: url("vincent-burkhead-147113-unsplash.jpg") no-repeat;
+    background-size:100%;
+    font-size: 18px;
+    color: black;
+    font: caption;
+    alignment: center;
+}
+
+table {
+    border: 1px solid saddlebrown;
+    width: 90%;
+    margin-left: 18pt;
+
+}
+th {
+    text-align: center;
+    padding: 3pt;
+    background-color: #4caf50;
+    color: white;
+}
+table, th, td {
+    border: 1px solid saddlebrown;
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+}
+tr:hover {background-color: rgba(197, 245, 209, 0.46);}
+#title {
+    font-size: 20pt;
+    background-color: rgba(82, 74, 210, 0.91);
+    color: white;
+    text-align: center;
+}
+
+div {
+    align-self: center;
+     alignment: center;
+}

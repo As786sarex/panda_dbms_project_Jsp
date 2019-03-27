@@ -1,7 +1,3 @@
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.Statement" %>
 <%--
   Created by IntelliJ IDEA.
   User: asif
@@ -17,11 +13,92 @@
     <title>INDEX PAGE</title>
 </head>
 <body>
-<script type="text/javascript" language="JavaScript" >
-    function doTransfer() {
-        window.open('show_student.jsp');
+<style>
+    body
+    {
+        margin:0;
+        background: #f2f2f2;
     }
-</script>
-<button name="Show All Students" title="Show All Students" onclick="doTransfer();">Show All Students</button>
+    .nav
+    {
+        width:100%;
+        background:#000033;
+        height: 80px;
+    }
+    ul
+    {
+        list-style:none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+    ul li{
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    ul li a{
+        width: 150px;
+        color: white;
+
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Century Gothic;
+        font-weight: bold;
+        background-color: Green;
+    }
+    a:hover{
+        background: #669900;
+    }
+    ul li ul{
+        background: none;
+    }
+    ul li:hover  ul li {
+        float: none;
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+
+    }
+    ul li ul li{
+        display: none;
+    }
+</style>
+
+
+<div class = "nav">
+    <ul>
+        <li>
+            <a href ="#">INSERT</a>
+            <ul>
+                <li><a href ="insert_student.jsp">STUDENT</a></li>
+                <li><a href ="insert_course.jsp">COURSE</a></li>
+                <li><a href ="insert_enroll.jsp">ENROLL</a></li>
+                <li><a href ="insert_book_adaptation.jsp">BOOK_ADOPTION</a></li>
+                <li><a href ="insert_text.jsp">TEXT</a></li>
+            </ul>
+        </li>
+
+        <li><a href ="#">SHOW</a>
+            <ul>
+                <li><a href ="show_student.jsp">STUDENT</a></li>
+                <li><a href ="show_course.jsp">COURSE</a></li>
+                <li><a href ="show_enroll.jsp">ENROLL</a></li>
+                <li><a href ="show_book_adaptation.jsp">BOOK_ADOPTION</a></li>
+                <li><a href ="show_text.jsp">TEXT</a></li>
+            </ul>
+        </li>
+        <li><a href ="#">QUERIES</a>
+            <ul>
+                <li><a href ="offered_by_cs_gt2.jsp">QUERY_QUESTION_4</a></li>
+                <li><a href ="deptByPublisherForm.jsp">QUERY_QUESTION_5</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 </body>
+
 </html>

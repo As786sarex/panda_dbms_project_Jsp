@@ -9,12 +9,14 @@
 <html>
 <head>
     <title>Show Department By Publisher</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
 
-    <table border="2">
+    <table border="2" width="320px">
+        <tr><th id="title" >Show All Department That Has All It's Book Published By Specific Publisher</th></tr>
         <tr>
-            <td>DEPARTMENT</td>
+            <th>DEPARTMENT</th>
         </tr>
         <%
             try {

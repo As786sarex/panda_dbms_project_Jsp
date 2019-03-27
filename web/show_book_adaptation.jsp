@@ -12,16 +12,18 @@
 <html>
 <head>
     <title>Show All Book Adaptation</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
 
 <form method="post">
 
     <table border="3">
+        <tr><th id="title" colspan="3">Show All Book Adaptation</th></tr>
         <tr>
-            <td>COURSE NUMBER</td>
-            <td>SEMESTER</td>
-            <td>BOOK ISBN</td>
+            <th>COURSE NUMBER</th>
+            <th>SEMESTER</th>
+            <th>BOOK ISBN</th>
         </tr>
         <%
             try {

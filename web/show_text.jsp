@@ -12,16 +12,18 @@
 <html>
 <head>
     <title>Show All Text</title>
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
 <form method="post">
 
     <table border="2">
+        <tr><th id="title" colspan="4">Show All Text Books</th></tr>
         <tr>
-            <td>BOOK ISBN</td>
-            <td>BOOK TITLE</td>
-            <td>PUBLISHER</td>
-            <td>AUTHOR</td>
+            <th>BOOK ISBN</th>
+            <th>BOOK TITLE</th>
+            <th>PUBLISHER</th>
+            <th>AUTHOR</th>
         </tr>
         <%
             try {
